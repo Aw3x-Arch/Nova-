@@ -1,0 +1,116 @@
+#Logo {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 60px;
+}
+#Bold {
+  font-weight: bold;
+}
+.Welcome {
+  text-align: center;
+  margin-top: 100px;
+}
+.Switch {
+  text-align: center;
+  background-color: rgba(240, 240, 240);
+  padding: 5px 5px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.container {
+  text-align: center;
+}
+#SignUp,
+#SignIn {
+  background-color: rgb(240, 240, 240) !important;
+  color: black !important;
+  border: none !important;
+  width: 255px;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#SignUp:hover,
+#SignIn:hover {
+  background-color: rgba(240, 240, 240) !important;
+}
+#SignUp:focus,
+#SignIn:focus {
+  background-color: rgb(255, 255, 255) !important;
+}
+.login {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /*? Vertical input*/
+  align-items: center;
+}
+
+input.form-control {
+  width: 65%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#Continue,
+#Create {
+  display: block;
+  width: 65%;
+  margin: 20px auto 0 auto;
+  padding: 12px;
+  font-size: 20px;
+}
+.Forgot {
+  margin-top: 5px;
+  position: relative;
+  left: 65%;
+  color: gray;
+  text-decoration: none;
+}
+
+.Forgot:hover {
+  text-decoration: underline;
+}
+
+.Method p {
+  text-align: center;
+  color: gray;
+  margin-top: 40px;
+}
+.Method a {
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 14%;
+  transition: all 0.2s ease;
+  padding: 4px;
+  font-weight: bold;
+}
+.Method a:hover {
+  transform: scale(1.1);
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#Notify {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 9999;
+  text-align: center;
+}
+#Notify.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}

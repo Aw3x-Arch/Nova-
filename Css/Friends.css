@@ -1,0 +1,248 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+.col-3 {
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 30px;
+  scrollbar-width: thin;
+}
+/*! Navbar */
+
+.navbar-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.navbar-nav li:not(.no-scale) {
+  margin-left: 10px;
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+.nav-item button {
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+#notify {
+  margin-bottom: 20%;
+  position: absolute;
+  bottom: -35%;
+  width: 100%;
+}
+.navbar-nav li:hover:not(.no-scale) {
+  transform: scale(1.02);
+  cursor: pointer;
+  background-color: rgb(230, 230, 230);
+}
+.navbar {
+  border-radius: 20px;
+  margin-top: 15px;
+  position: relative;
+}
+#selected a {
+  color: white !important;
+}
+#selected {
+  background-color: black !important;
+  width: 95%;
+}
+.navbar-nav {
+  width: 100%;
+}
+#Logo {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.profile {
+  background-color: rgb(230, 230, 230);
+  padding: 5%;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -65%;
+}
+.profile h1 {
+  font-weight: bold;
+  text-align: center;
+}
+.info-user {
+  margin-top: 1%;
+  display: flex;
+  gap: 4%;
+  align-items: flex-end;
+}
+.info-user img {
+  border-radius: 360px;
+  width: 10%;
+}
+.info-user h4,
+p {
+  font-weight: bold;
+}
+.status {
+  margin-top: 4%;
+}
+.navbar-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*!Search-bar */
+.Search-bar {
+  margin-top: 10%;
+}
+.Search-bar h2 {
+  font-weight: bold;
+}
+.Search-bar input {
+  margin-top: 3%;
+  border: 1px solid rgb(230, 230, 230) !important;
+  border-radius: 20px;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+}
+.suggest-slider {
+  width: 100%;
+  overflow: hidden;
+  background: none;
+  padding: 10px 0;
+}
+
+.track {
+  display: flex;
+  gap: 15px;
+  animation: slide 20s linear infinite;
+}
+.suggest-avatar img {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.suggest-add h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.suggest-add button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5%;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.suggest-add button:hover {
+  transform: scale(1.05);
+}
+.suggest-title h2 {
+  margin-top: 5%;
+  font-weight: bold;
+  margin-bottom: 7%;
+}
+.suggest-user {
+  background-color: rgb(230, 230, 230);
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.your-friends-title {
+  margin-top: 15%;
+}
+.your-friends-title h2 {
+  font-weight: bold;
+}
+.friends {
+  margin-top: 5%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.friends img {
+  width: 50px;
+  border-radius: 360px;
+}
+.friends h4 {
+  font-weight: bold;
+}
+.friends button {
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: black;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: all 0.2s ease;
+}
+.friends button:hover {
+  transform: scale(1.05);
+}
+
+/*TODO Notify */
+.notify-gui {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 2;
+}
+.notify-gui.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.notify-panel {
+  background-color: rgb(230, 230, 230);
+  padding: 1%;
+  border-radius: 20px;
+  width: 40%;
+  height: 50vh;
+}
+.notify-title h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.notify-item {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+.notify-item p {
+  font-weight: bold;
+}
+.notify-list {
+  display: flex;
+  flex-direction: column;
+}
